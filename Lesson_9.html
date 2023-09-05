@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+
+        }
+        body{
+            background: rgb(146, 238, 161);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+
+        }
+        .cart{
+            height: 500px;
+            width: 50%;
+            border: 1px solid gray;
+        }
+        .top{
+            height: 100px;
+            width: 100%;
+            background: white;
+            display: flex;
+            align-items: center;
+            
+
+        }
+        .collection{
+            display: flex;
+            align-items: center;
+            list-style-type: none;
+
+        }
+        .chevron{
+            list-style-type: none;
+            margin-left: 30px;
+            font-size: 20px;
+
+        }
+        .collection>span{
+            margin-left: 30px;
+            font-size: 18px;
+            
+        }
+        .heart>i{
+            font-size: 20px;
+            margin-left: 400px;
+        }
+        .bottom{
+            height: 400px;
+            width: 100%;
+            display: flex;
+
+        }
+        .left{
+            height: 100%;
+            width: 40%;
+            background: #fff;
+            border-right: 1px solid gray;
+            border-top: 1px solid gray;
+            border-bottom: 1px solid gray;
+        }
+        .left>img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        .right{
+            height: 100%;
+            width: 60%;
+            background: #fff;
+            border-top: 1px solid gray;
+            border-bottom: 1px solid gray;
+        }
+        .flower_name{
+            font-size: 28px;
+            font-weight: 400;
+            margin-left: 40px;
+            margin-top: 40px;
+        }
+        .flower_desc{
+            font-size: 18px;
+            margin-top: 5px;
+            margin-left: 40px;
+        }
+        .flower_price{
+            font-size: 36px;
+            color: gray;
+            margin-top: 10px;
+            margin-left: 40px;
+        }
+        .flower_info{
+            width: 80%;
+            margin-left: 40px;
+            color: gray;
+            font-size: 18px;
+            line-height: 1.3;
+            margin-top: 10px;
+        }
+        .btn{
+            padding: 17px 30px;
+            margin-left: 40px;
+            margin-top: 40px;
+            font-size: 16px;
+            border: 1px solid #000;
+            background: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="cart">
+         <div class="top">
+            <ul class="collection">
+                <li class="chevron"><i class="fa-solid fa-chevron-left"></i></li>
+                <span>BACK TO ALL PLANTS</span>
+                <li class="heart"><i class="fa-regular fa-heart"></i></li>
+            </ul>
+         </div>
+         <div class="bottom">
+            <div class="left">
+                <img src="flower_p.jpeg" alt="">
+            </div>
+            <div class="right">
+                <h1 class="flower_name">CLASSIC PEACE LILY</h1>
+                <p class="flower_desc">POPULAR HOUSE PLANT</p>
+                <p class="flower_price">18$</p>
+                <p class="flower_info">Classic Peace Lily is a spathiphyllum floor plant arranged ina bamboo planter with a blue &red ribbom and butterfly pick.</p>
+                <button class="btn">ADD TO CART</button>
+                <button class="btn">WISHLIST</button>
+
+            </div>
+         </div>
+    </div>
+</body>
+</html>
